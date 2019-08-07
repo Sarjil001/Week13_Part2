@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{234C2FEC-D29D-43D7-8B1A-6CB01D392FFE}</ProjectGuid>
+    <ProjectGuid>{3783B527-9F49-49F7-B153-DCA9C4992154}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Week13_Part2</RootNamespace>
-    <AssemblyName>Week13_Part2</AssemblyName>
+    <RootNamespace>Week13_Part3</RootNamespace>
+    <AssemblyName>Week13_Part3</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,32 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\MDIParent1.cs">
+    <Compile Include="views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MDIParent1.Designer.cs">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ParentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\ParentForm.Designer.cs">
-      <DependentUpon>ParentForm.cs</DependentUpon>
+    <Compile Include="views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ChildForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\ChildForm.Designer.cs">
-      <DependentUpon>ChildForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Views\MDIParent1.resx">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ParentForm.resx">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,8 +63,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\ChildForm.resx">
-      <DependentUpon>ChildForm.cs</DependentUpon>
+    <EmbeddedResource Include="views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,6 +79,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

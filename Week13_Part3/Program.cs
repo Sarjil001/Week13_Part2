@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Week13_Part2.Views;
 
-namespace Week13_Part2
+namespace Week13_Part3
 {
-
-    static class Program
+    public static class Program
     {
-        public static MDIParent1 parentForm;
+        public static MainForm mainForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,9 +18,9 @@ namespace Week13_Part2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            parentForm = new MDIParent1();
+            mainForm = new MainForm();
 
-            Application.Run(parentForm);
+            Application.Run(mainForm);
         }
     }
 }
